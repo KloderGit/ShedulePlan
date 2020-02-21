@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Service.DomainDatabaseEF": {
+      "commandName": "Project",
+      "sqlDebugging": false
+    }
+  }
+}

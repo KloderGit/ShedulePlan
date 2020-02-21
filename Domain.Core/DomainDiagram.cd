@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Domain.Core.Unit" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIAAAAAAEAAABAAAAAAAAAABAQgAAAAABAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Domain.Core.Node">
+    <Position X="5.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAIAAAAAAAAAIBAEQAAAAAAAAAQAAgAEAAAAAAA=</HashCode>
+      <FileName>Node.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Domain.Core.Param" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAQAIBAAAAAAAAAAAAQIAAAkAAAAAAA=</HashCode>
+      <FileName>Param.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Domain.Core.Module">
+    <Position X="8.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAQgAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Module.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Domain.Core.UnitProxy">
+    <Position X="6.5" Y="5" Width="1.5" />
+    <InheritanceLine Type="Domain.Core.Unit" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.375" Y="4.094" />
+        <Point X="8.375" Y="5.312" />
+        <Point X="8" Y="5.312" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAQAAAAAAABAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>UnitProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Domain.Core.Composit">
+    <Position X="10.5" Y="5" Width="1.5" />
+    <InheritanceLine Type="Domain.Core.UnitProxy" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="5.581" />
+        <Point X="10.5" Y="5.581" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAMAAAAAAAAAABAQAAAERAQAAAAAAAAEAAAAAABUIAA=</HashCode>
+      <FileName>Composit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Domain.Core.Interfaces.IDataBaseEntity">
+    <Position X="2.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAABAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IDataBaseEntity.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Domain.Core.Interfaces.IPayLoad">
+    <Position X="2.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPayLoad.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Domain.Interfaces.IComponent">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Domain.Interfaces.INode&lt;T&gt;">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Domain.Interfaces.INodeHub&lt;T&gt;">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Domain.Interfaces.IDBProxy&lt;T&gt;">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

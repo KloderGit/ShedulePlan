@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Domain.Infrastructure": {
+      "commandName": "Project",
+      "sqlDebugging": false
+    }
+  }
+}
