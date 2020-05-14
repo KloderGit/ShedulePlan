@@ -68,20 +68,20 @@ namespace Domain.Core
         }
 
 
-        public LinkedList<T> GetSheduleSchema<T>()
-        {
-            var list = new LinkedList<SheduleUnit>();
+        //public LinkedList<T> GetSheduleSchema<T>()
+        //{
+        //    var list = new LinkedList<SheduleUnit>();
 
-        }
+        //}
 
-        public LinkedListNode<SheduleUnit> GetListNodeValue<SheduleUnit>()
-        {
-            var list = new LinkedList<SheduleUnit>();
+        //public LinkedListNode<SheduleUnit> GetListNodeValue<SheduleUnit>()
+        //{
+        //    var list = new LinkedList<SheduleUnit>();
 
-            foreach (var component in this.Children)
-            {
-                list.AddLast(GetListNodeValue<SheduleUnit>());
-            }
-        }
+        //    foreach (var component in this.Children)
+        //    {
+        //        list.AddLast(GetListNodeValue<SheduleUnit>());
+        //    }
+        //}
     }
 }

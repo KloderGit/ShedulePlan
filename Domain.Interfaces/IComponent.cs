@@ -6,9 +6,9 @@ namespace Domain.Interfaces
 {
     public interface IComponent
     {
-        LinkedList<T> GetSheduleSchema<T>();
+        //LinkedList<T> GetSheduleSchema<T>();
 
-        T GetListNodeValue<T>();
+        //T GetListNodeValue<T>();
 
         //void Execute();
         //void AcceptVisitor();

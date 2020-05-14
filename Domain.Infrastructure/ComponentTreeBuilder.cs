@@ -15,7 +15,7 @@ namespace Domain.Infrastructure
                 return nodes.Select(x => Recursion(x));
         }
 
-        public IComponent Recursion(Node node)
+        private IComponent Recursion(Node node)
         {
             if (node == null || node.Unit == null) throw new ArgumentNullException("Запись равна null либо не привязан Unit");
 
@@ -25,7 +25,7 @@ namespace Domain.Infrastructure
             return component;
         }
 
-        IComponent ConvertToComposit(Node node)
+        private IComponent ConvertToComposit(Node node)
         {
             var component = (Composit)node.Unit.ShallowCopy<Composit>();
             (component as UnitProxy).LinkToDBRecord(node);
@@ -33,7 +33,7 @@ namespace Domain.Infrastructure
             return component;
         }
 
-        IComponent ConvertToModel(Node node)
+        private IComponent ConvertToModel(Node node)
         {
             var component = node.Unit.ShallowCopy<Module>();
             (component as UnitProxy).LinkToDBRecord(node);
